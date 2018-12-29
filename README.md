@@ -88,6 +88,13 @@ After all paths have been found, we need to efficiently count the vehicles that 
 If all above conditions meet, we increase the vehicular count by 1 
 
 The pipeline saves the foreground masks of each frame and images with boxes over objects in the frames. For each frame, it gives us the date, time of processing, frame number and the number of vehicles detected up to that point.  
+## Implementation
+
+code of implementation comprising of 3 files: 
+
+1. Pipeline.py - contains the pipeline for execution, uses helper functions from utils.py
+2. traffic.py - initialises the pipeline and calls the pipeline functions
+3. utils.py - contains helper functions
 
 ## Results
 
