@@ -92,3 +92,10 @@ The pipeline saves the foreground masks of each frame and images with boxes over
 #### Results
 
 We implemented the algorithm on the given dataset be using two different background subtraction methods using  MOG2 and KNN.
+
+* *In Background subtraction using MOG2:* *
+
+Mask:
+
+
+  - Find and store point having minimum to the path along with the distance  
