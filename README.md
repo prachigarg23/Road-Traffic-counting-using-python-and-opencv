@@ -97,4 +97,38 @@ We implemented the algorithm on the given dataset be using two different backgro
 
 Mask:
 
+![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/MOG2_mask.png)
+
+Processed Image:
+
+![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/MOG2_mask.png)
+
+* *In Background subtraction using KNN:* *
+
+Mask:
+
+![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/KNN_mask.png)
+
+Processed Image:
+
+![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/KNN.png)
+
+The number of vehicles observed in both the algorithms are equal to 4184 , but the time taken by knn is almost twice that is mog2 , hence mog2 is considered the better choice. Time taken by mog2 is almost equal to the length of the video.
+
+Both MOG2 and KNN background subtraction can be used to get shadow less mask images.
+
+When shadow is not removed following mask is obtained .
+
+Mask:
+
+![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/KNN_mask_wshadow.png)
+
+Result of using mask with shadow is as shown below, if mask is not remove boundary box of images end up getting overlapped.
+
+![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/KNN_wshadow.png)
+
+
+
+
+
 
