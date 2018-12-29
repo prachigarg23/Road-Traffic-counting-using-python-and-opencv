@@ -1,10 +1,10 @@
 # Road Traffic Counting 
 
-### Abstract
+## Abstract
 
 In this project we tackle the problem of building intelligent computer vision systems to solve the problem of traffic monitoring. We use background subtraction method to detect and count the number of vehicles in a video. Along with background subtraction we use meanshift method to ensure that no vehicle is counted more than once. This is a simple method that uses image processing concepts without using machine learning algorithms that require training. These algorithms start yielding reliable results after initialisation on a few 100 frames. It is a cheap solution that requires openCV and python to run the code on a video of the traffic. This teaches us the importance and relevance of basic image processing and computer vision principles. 
 
-### Introduction
+## Introduction
 
 With the conception of smart city transmuting cities into digital societies, making the life of its citizens easy in every way, Intelligent Transport Systems become the indispensable component among all. In any city mobility is a key concern; be it going to school, college and office or for any other purpose citizens use the transport system to travel within the city. Integrating an intelligent transport system in the city can save commuter time, help regulate law and order systematically, reduce congestion, improve travel and transit information, generate cost savings to motor carriers and emergencies operators, reduce detrimental environmental impacts and also reduce commuter stress and irritation. Hence it is an effort towards leveraging public safety and comfort. 
 
@@ -43,14 +43,14 @@ In this project, we use 2 background subtraction algorithms and compare performa
 1. The threshold on the squared distance between the pixel and the sample is used  to decide whether a pixel is close to a data sample.
 2. K is the number of samples that need to be within Threshold in order to decide that that pixel is matching the kNN background model.
 
-#### Cleaning the foreground mask
+### Cleaning the foreground mask
 A simple approach to improve foreground mask is to apply a few morphological transformations. We fill holes with closing operation, remove noise with opening operation and use dilation to merge adjacent blobs. 
 Inspecting the masks, processed frames and the log file generated with filtering, we can see that after filtering, algorithm detects vehicles more reliably, and we have mitigated the issue of different parts of one vehicle being detected as separate objects.
  
-#### Object detection using contours 
+### Object detection using contours 
 After we have the filtered foreground mask, we find contours. We fix a minimum height and width for which the object is a valid vehicle. This size is fixed on inspection of the sizes of the cars. We draw rectangles around the objects using contours and filters those objects that do not fulfill validity criteria. We calculate the center (centroid) of each object using height, width and origin coordinates of the image. These centers are passed on for further processing. 
 
-#### Applying the meanshift algorithm
+### Applying the meanshift algorithm
 Background subtraction along with meanshift helps in accurate counting since meanshift keeps the track of vehicles that are already identified by the background subtraction method . Meanshift is an algorithm that tracks objects by finding the maximum density of a discrete sample of a probability function (in our case, a region of interest in an image) and recalculating it at the next frame, which gives the algorithm an indication of the direction in which the object has moved. 
 
 To avoid detecting the same vehicle more than once in the same frame or in consecutive frames, we use a path tracking algorithm for each vehicle. In this algorithm, the goal is to track the path traced by each vehicle and use euclidean distance to calculate the path that each new point belongs to. After all points corresponding to each path have been found, we count the vehicle corresponding to that path as 1 and increment the vehicle count. The algorithm can be stated as follows:
@@ -89,7 +89,7 @@ If all above conditions meet, we increase the vehicular count by 1
 
 The pipeline saves the foreground masks of each frame and images with boxes over objects in the frames. For each frame, it gives us the date, time of processing, frame number and the number of vehicles detected up to that point.  
 
-### Results
+## Results
 
 We implemented the algorithm on the given dataset be using two different background subtraction methods using  MOG2 and KNN.
 
@@ -128,14 +128,14 @@ Result of using mask with shadow is as shown below, if mask is not remove bounda
 ![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/KNN_wshadow.png)
 
 
-### Discussions and conclusions
+## Discussions and conclusions
 
 Out of the two algorithms used for background detection it is clear that MOG2 is better in comparison to KNN ( Lazy computation methods ) because MOG2 performs real time analysis as required for practical purposes whereas KNN does not.
 
 Morphological filters are powerful in making images consistent and improving the performance of object detection and tracking. 
 
 
-### References 
+## References 
 
 - https://stackoverflow.com/questions/36254452/counting-cars-opencv-python-issue/36274515#36274515
 
