@@ -98,4 +98,3 @@ We implemented the algorithm on the given dataset be using two different backgro
 Mask:
 
 
-  - Find and store point having minimum to the path along with the distance  
