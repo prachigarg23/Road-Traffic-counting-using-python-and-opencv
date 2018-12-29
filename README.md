@@ -96,7 +96,7 @@ code of implementation comprising of 3 files:
 2. traffic.py - initialises the pipeline and calls the pipeline functions
 3. utils.py - contains helper functions
 
-* *To run the script:* *
+*To run the script:* 
 
 > python traffic.py
 
