@@ -11,7 +11,7 @@ With the conception of smart city transmuting cities into digital societies, mak
 ITS technologies assist states, cities, and towns nationwide to meet the increasing demands on surface transportation systems. It enables the roads to be more accommodative of the ever growing population and handle a large number of routine commuters with ease and efficiency. The efficiency of an ITS system is mainly based on the performance and comprehensiveness of the vehicle detection technology.  Vehicle detection and tracking are an integral part of any vehicle detection technology, since it gathers all or part of the information that are used in an effective ITS. The ITS develops schemes and algorithms based on vehicular data on each street. This data must reflect upon the number of vehicles passing through the road or highway on an average hourly basis, periods of the year with increased traffic flow, potential reasons for the increase, types of vehicles passing through, the speeds at which they pass. Besides these, it should also monitor and should be able to identify any accidents or mishaps that have occurred on the road. 
 Hence, the main parameters that can be evaluated through video based vehicle detection and tracking include count, speed, vehicle classification, queue lengths, volume/lane, lane changes, microscopic and macroscopic behaviors. The aim of this project is to implement a motion detection and tracking algorithm to count road traffic passing through the road as captured by a video camera. We shall employ OpenCV and Python to implement motion detection and tracking using background selection algorithm. 
 
-### Main theme of the work
+## Main theme of the work
 
 To accomplish the task of vehicle detection and tracking using low cost hardware and in computationally constrained environments, we need an algorithm that would (i) acquire a whole image from a video and temporary store it for further analysis, (ii) separate the background from the foreground, and (iii) keep track of each vehicle using a unique label. 
 
@@ -24,7 +24,7 @@ We follow the following procedure to extract an accurate count of the traffic:
 
 Now we shall take up each of the steps in the pipeline separately.
 
-#### Background Subtraction 
+### Background Subtraction 
 
 Background subtraction is a major preprocessing step in many vision-based applications. Technically, we use this to extract the moving foreground from static background.
 We subtract the an image containing objects by an image of the background alone to get the foreground objects in the scene. When shadows are involved, this becomes slightly complicated as the shadows are also detected in the foreground. There are various types of background subtractors like MOG, MOG2, KNN and GMG. OpenCV has built in functions to implement all these. 
