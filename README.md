@@ -89,7 +89,7 @@ If all above conditions meet, we increase the vehicular count by 1
 
 The pipeline saves the foreground masks of each frame and images with boxes over objects in the frames. For each frame, it gives us the date, time of processing, frame number and the number of vehicles detected up to that point.  
 
-#### Results
+### Results
 
 We implemented the algorithm on the given dataset be using two different background subtraction methods using  MOG2 and KNN.
 
@@ -101,7 +101,7 @@ Mask:
 
 Processed Image:
 
-![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/MOG.png)
+![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/MOG2.png)
 
 **In Background subtraction using KNN:**
 
@@ -128,6 +128,20 @@ Result of using mask with shadow is as shown below, if mask is not remove bounda
 ![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/KNN_wshadow.png)
 
 
+### Discussions and conclusions
+
+Out of the two algorithms used for background detection it is clear that MOG2 is better in comparison to KNN ( Lazy computation methods ) because MOG2 performs real time analysis as required for practical purposes whereas KNN does not.
+
+Morphological filters are powerful in making images consistent and improving the performance of object detection and tracking. 
+
+
+### References 
+
+https://stackoverflow.com/questions/36254452/counting-cars-opencv-python-issue/36274515#36274515
+
+https://medium.com/machine-learning-world/tutorial-making-road-traffic-counting-app-based-on-computer-vision-and-opencv-166937911660
+
+https://docs.opencv.org/3.4/db/d5c/tutorial_py_bg_subtraction.html
 
 
 
