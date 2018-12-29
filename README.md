@@ -96,6 +96,10 @@ code of implementation comprising of 3 files:
 2. traffic.py - initialises the pipeline and calls the pipeline functions
 3. utils.py - contains helper functions
 
+* *To run the script:* *
+
+> python traffic.py
+
 ## Results
 
 We implemented the algorithm on the given dataset be using two different background subtraction methods using  MOG2 and KNN.
