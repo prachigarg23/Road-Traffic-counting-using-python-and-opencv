@@ -137,11 +137,11 @@ Morphological filters are powerful in making images consistent and improving the
 
 ### References 
 
-https://stackoverflow.com/questions/36254452/counting-cars-opencv-python-issue/36274515#36274515
+- https://stackoverflow.com/questions/36254452/counting-cars-opencv-python-issue/36274515#36274515
 
-https://medium.com/machine-learning-world/tutorial-making-road-traffic-counting-app-based-on-computer-vision-and-opencv-166937911660
+- https://medium.com/machine-learning-world/tutorial-making-road-traffic-counting-app-based-on-computer-vision-and-opencv-166937911660
 
-https://docs.opencv.org/3.4/db/d5c/tutorial_py_bg_subtraction.html
+- https://docs.opencv.org/3.4/db/d5c/tutorial_py_bg_subtraction.html
 
 
 
