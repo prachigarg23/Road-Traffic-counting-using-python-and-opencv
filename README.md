@@ -93,7 +93,7 @@ The pipeline saves the foreground masks of each frame and images with boxes over
 
 We implemented the algorithm on the given dataset be using two different background subtraction methods using  MOG2 and KNN.
 
-* *In Background subtraction using MOG2:* *
+**In Background subtraction using MOG2:**
 
 Mask:
 
@@ -101,9 +101,9 @@ Mask:
 
 Processed Image:
 
-![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/MOG2_mask.png)
+![alt text](https://github.com/prachigarg23/Road-Traffic-counting-using-python-and-opencv/blob/master/sample_results/MOG.png)
 
-* *In Background subtraction using KNN:* *
+**In Background subtraction using KNN:**
 
 Mask:
 
