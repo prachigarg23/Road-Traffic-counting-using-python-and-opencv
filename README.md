@@ -2,7 +2,7 @@
 
 ## Abstract
 
-In this project we tackle the problem of building intelligent computer vision systems to solve the problem of traffic monitoring. We use background subtraction method to detect and count the number of vehicles in a video. Along with background subtraction we use meanshift method to ensure that no vehicle is counted more than once. This is a simple method that uses image processing concepts without using machine learning algorithms that require training. These algorithms start yielding reliable results after initialisation on a few 100 frames. It is a cheap solution that requires openCV and python to run the code on a video of the traffic. This teaches us the importance and relevance of basic image processing and computer vision principles. 
+In this project we build an intelligent computer vision algorithm that solves the problem of traffic monitoring. We use background subtraction method to detect and count the number of vehicles in a video. Along with background subtraction we use meanshift method to ensure that no vehicle is counted more than once. This is a simple method that uses image processing concepts without using machine learning algorithms that require training. These algorithms start yielding reliable results after initialisation on a few 100 frames. It is a cheap solution that requires openCV and python to run the code on a video of the traffic. This teaches us the importance and relevance of basic image processing and computer vision principles. 
 
 ## Introduction
 
